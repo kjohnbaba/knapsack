@@ -151,8 +151,7 @@ int
 main (int argc, char **argv)
 {
 
-  //  weights = malloc((num_items + 1)*sizeof(int));
-  //   values = malloc((num_items + 1)*sizeof(int));
+
 
   int weight_limit;
   sscanf (argv[1], "%d", &weight_limit);
@@ -161,8 +160,7 @@ main (int argc, char **argv)
   int itemcount;
   fscanf (fp, "%d\n", &itemcount);
 
- // int *weights = (int *) malloc (sizeof (int *) * itemcount);
- // int *values = (int *) malloc (sizeof (int *) * itemcount);
+
 
 
 //  int j, i;
@@ -175,7 +173,7 @@ main (int argc, char **argv)
     {
       sscanf (temp, "%31s %d %d", itemList[itemsIndex].name,
 	      &itemList[itemsIndex].weight, &itemList[itemsIndex].value);
-      itemsIndex++;		// ad degistir belki
+      itemsIndex++;		
     }
 
     //printf("limit: %d \n", weight_limit);
@@ -187,8 +185,7 @@ main (int argc, char **argv)
 
  callKnapSack (itemList, itemcount, weight_limit);
 
-  //  int** table = malloc((itemcount + 1)*sizeof(int*));
-  // initialize value weight, max items, max weight, sonra Malloc 
+
 
   return 0;
 }
