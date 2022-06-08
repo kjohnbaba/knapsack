@@ -18,14 +18,14 @@ void
 findknapSack (int W, int wt[], int val[], int n, int indexList[], int ValueWeight[])
 {
   int i, w;
- // int K[n + 1][W + 1];      // variable length array change this
+ // int K[n + 1][W + 1];      
   int K[256][256];    
 
   for (i = 0; i <= n; i++) // table 
     {                                  
       for (w = 0; w <= W; w++)          
 	{
-	  if (i == 0 || w == 0)             // double check this part
+	  if (i == 0 || w == 0)           
 	    K[i][w] = 0;
 	  else if (wt[i - 1] <= w)
 	    K[i][w] = max (val[i - 1] + K[i - 1][w - wt[i - 1]], K[i - 1][w]);
@@ -184,9 +184,6 @@ main (int argc, char **argv)
      } */
 
  callKnapSack (itemList, itemcount, weight_limit);
-
-
-
   return 0;
 }
 
