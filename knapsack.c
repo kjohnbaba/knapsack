@@ -45,9 +45,8 @@ findknapSack (int W, int wt[], int val[], int n, int indexList[], int ValueWeigh
 	continue;
       else
 	{
-
 	  // This item is included.
-
+	      
 	  // If an index of a return item is included, assign 2.
 	  indexList[i - 1]=2 ;
 	  
@@ -81,12 +80,6 @@ callKnapSack (item *i, int itemcount, int weight_limit)
       weights[j] = i[j].weight;
       values[j] = i[j].value;
     }
-    //printf("itemcount:%d, weight_limit:%d", itemcount, weight_limit);
-
- //   for(j=0;j<itemcount;j++){
- //   printf("weight %d,value  %d \n", weights[j], values[j]);
- //   }
- 
   
   findknapSack (weight_limit, weights, values, itemcount, indexList, ValueWeight);
   
