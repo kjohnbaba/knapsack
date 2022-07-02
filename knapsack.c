@@ -167,7 +167,7 @@ main (int argc, char **argv)
       itemsIndex++;		
     }
 
-    //printf("limit: %d \n", weight_limit);
+   
   /*
      for (i = 0; i < itemsIndex; i++)
      {
