@@ -16,7 +16,6 @@ void
 findknapSack (int W, int wt[], int val[], int n, int indexList[], int ValueWeight[])
 {
   int i, w;
- // int K[n + 1][W + 1];      
   int K[256][256];    
 
   for (i = 0; i <= n; i++) // table 
