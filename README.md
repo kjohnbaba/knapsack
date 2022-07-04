@@ -1,7 +1,6 @@
-Program written for Rutgers cs211 Computer Architecture class
+Program written for Rutgers cs211 Computer Architecture class as homework
 
 Takes item names, values and weight from a file, and depending on the knapsack capacity entered it will choose the items with the highest amount of value it can fit in the knapsack, made with dynamic programming and therefore will have the right answer in every case
-
 
 In Terminal Write:
 
